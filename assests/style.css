@@ -1,0 +1,307 @@
+/* dafault css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body ul li{
+    list-style: none;
+}
+body ul li a{
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+}
+
+/* main-css-start */
+.fb-header{
+   background-color: #FFFFFF;
+   width: 100%;
+   padding: 0px 14px;
+   margin-bottom: -7px;
+   
+}
+.fb-brand{
+   display: flex;
+   margin-top: 5px;
+   
+}
+.fb-brand img:hover{
+    cursor: pointer;
+}
+.fb-brand input {
+	padding: 0px 28px;
+	border-radius: 50px;
+	background-color: #F0F2F5;
+	border: none;
+	margin-top: 4px;
+	height: 42px;
+    color: #606060;
+    position: relative;
+}
+
+.fb-brand input{
+  outline: none;
+}
+
+.fb-brand i{
+    position: absolute;
+    top: 23px;
+    left: 75px;
+    color: #949494;
+}
+
+/* menu */
+.fb-menu {
+	margin-top: 13px;
+	margin-bottom: -5px;
+}
+.fb-menu ul{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0px;
+   align-items: center;
+   height: 45px;
+}
+
+.fb-menu ul li{
+   width: 100%;
+   text-align: center;
+   position: relative;
+   height: 100%;
+}
+.fb-menu ul li:hover{
+    cursor: pointer;
+    background-color: #E4E6E9;
+    transition: .6s;
+    border-radius: 5px;
+}
+.fb-menu ul li.active svg{
+    color: #1B74E4;
+}
+.fb-menu ul li.active::before{
+    content: "";
+    height: 3px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    background-color: #1B74E4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.fb-menu ul li a{
+    display: block;
+}
+/* fb-auth-css */
+.fb-auth{
+   empty-cells: hide;
+}
+.fb-auth img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.fb-auth ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.fb-auth ul li{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #E4E6EB;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.fb-auth ul li svg{
+    color: #000;
+    margin-top: 10px;
+}
+.fb-auth img:hover{
+    cursor: pointer;
+}
+
+
+/* body-part-css */
+.b{
+    background-color: #F0F2F5;
+    height: 100vh;
+    padding: 0 0px;
+    margin-left: -18px;
+}
+.b ul li{
+    display: flex;
+    position: relative;
+    z-index: 5;
+    padding-left: 5px;
+}
+.b ul li:hover:before{
+    content: "";
+    background-color: #E4E6E9;
+    transition: .6s;
+    height: 90%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 12px;
+}
+.b ul li img:nth-child(1){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.b ul li span {
+	padding-top: 24px;
+	color: #4d4949;
+	font-size: 14px;
+    cursor: pointer;
+}
+
+/* story */
+.story{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+}
+.story-box{
+    width: 108px;
+    height: 195px;
+    border-radius: 9px;
+    margin-left: 10px;
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,.1);
+    position: relative;
+}
+.story-box:hover{
+   width: 106px;
+   height: 193px;
+   transition: .1s;
+}
+.story-box span{
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5px;
+    left: 5;
+}
+.story-box:nth-child(1){
+    background-image: url(./profile-img/minhaj.jpg);
+    background-size: cover;
+    padding: 0 10px;
+    background-position: center;
+}
+.story-box:nth-child(2){
+    background-image: url(./profile-img/minhaj-story.jpg);
+    background-size: cover;
+    padding: 0 10px;
+    background-position: center;
+}
+.story-box:nth-child(3){
+    background-image: url(./profile-img/mafi-story.jpg);
+    background-size: cover;
+    padding: 0 10px;
+    background-position: center;
+    position: relative;
+}
+.story-box:nth-child(4){
+    background-image: url(./profile-img/alina-story.jpg);
+    background-size: cover;
+    padding: 0 10px;
+    background-position: center;
+}
+.story-box:nth-child(5){
+    background-image: url(./profile-img/munsur.jpg);
+    background-size: cover;
+    padding: 0 10px;
+    background-position: center;
+}
+.story-box:nth-child(1) span{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+}
+.story-box:nth-child(1)::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: #166ADA;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 125px;
+    left: 32px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    z-index: 1;
+}
+.story-box:nth-child(1) span{
+    height: 45px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    padding-left: -10px;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+}
+/* mini-border-profile */
+.story-box:nth-child(2)::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-image: url(./profile-img/minhaj.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 12px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+.story-box:nth-child(3)::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-image: url(./profile-img/mafi.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 12px;
+    border-radius: 50%;
+    border: 4px solid #166ADA;
+}
+.story-box:nth-child(4)::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-image: url(./profile-img/alina.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 12px;
+    border-radius: 50%;
+    border: 4px solid #166ADA;
+}
+.story-box:nth-child(5)::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-image: url(./profile-img/munsur.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 12px;
+    border-radius: 50%;
+    border: 4px solid #166ADA;
+}
