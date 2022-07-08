@@ -68,13 +68,13 @@
             </div>
         </div>
     </div>
-<!-- Facebook-Header End -->
-<!-- body part start -->
-<div class="b">
-   <div class="row">
-    <div class="col-md-3">
-        <div class="n-icon">
-            <ul>
+    <!-- Facebook-Header End -->
+    <!-- body part start -->
+    <div class="b">
+      <div class="row">
+       <div class="col-md-3">
+          <div class="n-icon">
+             <ul>
                 <li><img src="./img/pro-2.jpg" alt=""><span>Md Minhaj</span></li>
                 <li><img src="./img/friend.png" alt=""><span>Friends</span></li>
                 <li><img src="./img/communities.png" alt=""><span>Communities(Groups)</span></li>
@@ -111,11 +111,11 @@
                <span>Md Munsur</span> 
             </div>
         </div>
-  <!-- fb-post-card-section -->
+    <!-- fb-post-card-section -->
         <div class="fb-post">
             <div class="card shadow-sm w-75 modal-dialog-centered d-block py-3 px-3 m-auto mt-4 post-card">
                 <img src="./assests/profile-img/minhaj.jpg" alt="">
-                <button>What's on your mind, Md?</button>
+                <button data-bs-toggle="modal" data-bs-target="#my-modal">What's on your mind, Md?</button>
                 <hr class="w-100 m-auto mt-3">
                 <div class="post-icon d-flex m-auto justify-content-between pt-2">
                     <div class="post-icon-box">
@@ -149,14 +149,74 @@
                 </div>
              </div>
            </div>
+    <!-- post-timeline-area -->
+       <div class="post-timeline-area w-75 m-auto">
+         <div class="card shadow-sm">
+            <div class="card-body">
+               <div class="user-auth-area d-flex justify-content-between">
+                <div class="user-info">
+                    <img src="./assests/profile-img/mafi.jpg" alt="">
+                    <span>Mafi Aktar</span><br>
+                    <a>24m ago. <i class="fa-solid fa-earth-africa"></i></a>
+                </div>
+                <div class="user-edit">
+                    
+                    <div class="dropdown">
+                        <a id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">View</a></li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                        </ul>
+                      </div>
 
-        </div>
+                </div>
+               </div>
+            <!-- status -->
+              <div class="staus mt-3">
+                <p>Lorem ipsum dolor sit amet. 😊💕</p>
+                <img src="./img/mafi-post.jpg" alt="">
+              </div>
+            </div>
+         </div>
+       </div>
+
+      </div>
     </div>
+   <!-- messenger-area -->
     <div class="col-md-3">
        
     </div>
    </div>
 </div>
+<!-- modals -->
+
+<div id="my-modal" class="modal fade cl">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-header">
+                  <h4>Create post</h4>  
+                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                
+                <form class="mt-4" action="#">
+                  <label for="#">Auth Name</label>
+                  <input class="form-control" type="text">
+                  <label for="#">Auth Photo</label>
+                  <input class="form-control" type="text">
+                  <label for="#">Auth Content</label>
+                  <textarea class="form-control"></textarea>
+                  <label for="#">Post Photo</label>
+                  <input class="form-control" type="text">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- body part end -->
     
 

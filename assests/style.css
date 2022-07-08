@@ -9,18 +9,22 @@ body ul li{
 body ul li a{
     text-decoration: none;
 }
-
 input{
     outline: none;
 }
+body{
+    background-color: #F0F2F5;
+}
 
 /* main-css-start */
-.fb-header{
-   background-color: #FFFFFF;
-   width: 100%;
-   padding: 0px 14px;
-   margin-bottom: -7px;
-   
+.fb-header {
+	background-color: #FFFFFF;
+	width: 100%;
+	padding: 0px 14px;
+	margin-bottom: -7px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
 }
 .fb-brand{
    display: flex;
@@ -128,6 +132,7 @@ input{
     height: 100vh;
     padding: 0 0px;
     margin-left: -18px;
+    padding-top: 70px;
 }
 .b ul li{
     display: flex;
@@ -304,7 +309,9 @@ input{
 }
 
 /* fb-post-card-section  */
-
+.n-icon{
+    position: fixed;
+}
 .fb-post .post-card{
     border-radius: 8px;
 }
@@ -399,4 +406,74 @@ input{
    bottom: 1px;
    left: 27px;
    position: absolute;
+}
+
+/* modals-css */
+.modal-header .btn-close {
+   width: 20px;
+   height: 20px;
+   background-color: #D8DADF;
+   font-size: 15px;
+   color: #6F767E;
+   border-radius: 50%;
+   margin-top: -20px;
+}
+.modal-header h4{
+    font-weight: 600;
+}
+.cl{
+    color: #18191A;
+}
+
+/* post-timeline-area */
+.user-auth-area{
+    position: relative;
+}
+.user-info img {
+	margin-top: 10px;
+	margin-right: 7px;
+    cursor: pointer;
+}
+.user-info span{
+    margin-top: -20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.user-info a {
+	margin-left: 50px;
+	display: block;
+	margin-top: -18px;
+	font-size: 13px;
+    cursor: pointer;
+}
+.user-info i{
+    color: #65676B;
+    font-size: 12px;
+}
+
+.staus > img {
+	width: 100%;
+	border-radius: 0;
+	height: auto;
+    cursor: pointer;
+}
+
+.user-edit a{
+    color: #606266;
+    cursor: pointer;
+}
+.user-edit{
+    margin-top: 10px;
+}
+.dropdown-menu.show {
+	display: block;
+	box-sizing: border-box;
+    position: absolute;
+}
+.user-edit ul li{
+    padding-left: 0px;
+}
+.user-edit ul li::before{
+    content: '';
+    display: none;
 }
